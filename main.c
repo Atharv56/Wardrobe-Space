@@ -54,3 +54,20 @@ void outing_m(){
 void college_outfit_m(){
 
 }
+void female()
+{
+    int n;
+    printf("what occassion are you dressing up for??\n1.Date night\n2.outing with friends\n3.college outfit");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1: datenight();
+        break;
+        case 2: outing_with_friends();
+        break;
+        case 3: college_outfits();
+        break;
+        default: printf("oops!sorry cant reccomand any outfits");
+        break;
+    }
+}
