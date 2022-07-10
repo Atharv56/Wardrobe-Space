@@ -8,7 +8,7 @@ int main()
     float cost1[80]={4000.00,2000.00,1500.00};
     char outfit2[][8000]={"leather jacket+turtleneck+mom fit jeans","vest top+skirt+layered necklace+black leather boots","plaid shirt+jeans+choker"};
     float cost2[80]={2500.00,2000.00,1560.00};
-    char outfit3[][8000]={"white crop top+plaid skirt+black pumps","floral dress+bracelet+lace ballet flats";"sleeves top+shorts+leather jacket+ black nose ring"};
+    char outfit3[][8000]={"white crop top+plaid skirt+black pumps","floral dress+bracelet+lace ballet flats";"sleeves top+shorts+leather jacket+black nose ring"};
     float cost3[80]={3500.00,1550.00,2890.00};
     char outfit4[][8000]={"denim jacket+floral dress+bright sandals+sunglasses to look gorgeous","Jumpsuit+statement clutch+flat heels","grey sweatshirt+blue ribbed jeans+black shoes"};
     float cost4[80]={1545.00,2000.00,1789.00};
