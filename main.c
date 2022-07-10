@@ -15,10 +15,32 @@ int main(){
         break;
         case 2:
         printf("Female");
-        break;
         //female();
+        break;
+        
         default:
             printf("Gender not specified");
     }
     return 0;
+}
+
+void male(){
+    int n;
+    printf("What occasion are you dressing up for");
+    printf("\n1) Date Night\n2) Outing with friends\n 3) College Outfit");
+    scanf("%d", &n);
+    switch(n){
+        case 1:
+        datenight_m();
+        break;
+        case 2:
+        outing_m();
+        break;
+        case 3:
+        college_outfit();
+        break;
+        default:
+        printf("OOPS! sorry can't recommend any outfit.");
+    }
+    
 }
