@@ -37,10 +37,20 @@ void male(){
         outing_m();
         break;
         case 3:
-        college_outfit();
+        college_outfit_m();
         break;
         default:
         printf("OOPS! sorry can't recommend any outfit.");
     }
-    
+
+}
+
+void datenight_m(){
+
+}
+void outing_m(){
+
+}
+void college_outfit_m(){
+
 }
