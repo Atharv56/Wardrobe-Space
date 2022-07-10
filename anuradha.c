@@ -27,6 +27,7 @@ int main()
         case 1:
         for(i=0;i<=2;i++)
         {
+<<<<<<< HEAD
             printf("here you go\n%s(estimated cost Rs %.2f)\n"outfit1[i],cost1[i]);
         }
         break;
@@ -52,13 +53,18 @@ int main()
         printf("oops!option not available");
         break;
 
+=======
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit1[i],cost1[i]);
+        }
+        break;
+>>>>>>> e6c4e1a83f940765e6a7d3eaec1366550e370758
     }
-        
-    }
-        
-    
-    
-    
+         
     getch();
-    return 0;
-}
+    return 0;   
+    }
+        
+    
+    
+
+
