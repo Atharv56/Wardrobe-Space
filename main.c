@@ -19,7 +19,7 @@ int main(){
         break;
         
         default:
-            printf("Gender not specified");
+            printf("invalid input");
     }
     return 0;
 }
