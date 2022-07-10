@@ -27,37 +27,31 @@ int main()
         case 1:
         for(i=0;i<=2;i++)
         {
-<<<<<<< HEAD
-            printf("here you go\n%s(estimated cost Rs %.2f)\n"outfit1[i],cost1[i]);
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit1[i],cost1[i]);
         }
         break;
         case 2:
         for(i=0;i<=2;i++)
         {
-            printf("here you go\n%s(estimated cost Rs %.2f)\n"outfit2[i],cost2[i]);
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit2[i],cost2[i]);
         }
         break;
         case 3:
         for(i=0;i<=2;i++)
         {
-            printf("here you go\n%s(estimated cost Rs %.2f)\n"outfit3[i],cost3[i]);
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit3[i],cost3[i]);
         }
         break;
         case 4:
         for(i=0;i<=2;i++)
         {
-            printf("here you go\n%s(estimated cost Rs %.2f)\n"outfit4[i],cost4[i]);
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit4[i],cost4[i]);
         }
         break;
         default:
         printf("oops!option not available");
         break;
 
-=======
-            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit1[i],cost1[i]);
-        }
-        break;
->>>>>>> e6c4e1a83f940765e6a7d3eaec1366550e370758
     }
          
     getch();
