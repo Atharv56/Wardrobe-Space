@@ -46,7 +46,7 @@ void male(){
 }
 
 void datenight_m(){
-
+    
 }
 void outing_m(){
 
