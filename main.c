@@ -31,10 +31,10 @@ void male(){
         datenight_m();
         break;
         case 2:
-        //outing_m();
+        outing_m();
         break;
         case 3:
-        //college_outfit_m();
+        college_outfit_m();
         break;
         default:
         printf("OOPS! sorry can't recommend any outfit.");
@@ -45,50 +45,62 @@ void male(){
 void datenight_m(){
     int x, sum=0;
     char top1[][8000] = {"black tee", "white tee", "red tee"};
-    int cost[80]={100, 200, 300};
+    int costt1[80]={100, 200, 300};
+
     char bottom1[][8000] = {"trouser", "jeans", "cargo"};
+    int costb1[80] = {200,300,100};
+
     char foot1[][8000] = {"Sneakers", "sport shoes", "formals"};
+    int costf1[80]= {500,200,700};
+
     printf("\n1.Day\n2.Night");
     scanf("%d", &x);
     switch(x){
         case 1: 
 
-            for(int i = 1; i<=3; i++){
-                printf("\noption %d:", i);
+            for(int i = 0; i<=2; i++){
+                printf("\noption %d:", i+1);
                 printf("\n%s\n%s\n%s", top1[i], bottom1[i], foot1[i]);
-                sum = cost[i]+ sum;
+                sum = costt1[i]+ costb1[i]+costf1[i]+sum;
                 printf("\nTotal cost: %i", sum);
-
-            }
-        break;
-        
-        
+                sum = 0;
+                }
+        break;    
 
     }
     
 
     
 }
-// void outing_m(){
-
-// }
-// void college_outfit_m(){
-
-// }
-// void female()
-// {
-//     int n;
-//     printf("what occassion are you dressing up for??\n1.Date night\n2.outing with friends\n3.college outfit");
-//     scanf("%d",&n);
-//     switch(n)
-//     {
-//         case 1: datenight();
-//         break;
-//         case 2: outing_with_friends();
-//         break;
-//         case 3: college_outfits();
-//         break;
-//         default: printf("oops!sorry cant reccomand any outfits");
-//         break;
-//     }
-// }
+void outing_m(){
+    printf("In progress");
+}
+void college_outfit_m(){
+    printf("In progress");
+}
+void female()
+{
+    int n;
+    printf("what occassion are you dressing up for??\n1.Date night\n2.outing with friends\n3.college outfit");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1: datenight();
+        break;
+        case 2: outing_with_friends();
+        break;
+        case 3: college_outfits();
+        break;
+        default: printf("oops!sorry cant reccomand any outfits");
+        break;
+    }
+}
+void datenight(){
+    printf("In progress");
+}
+void outing_with_friends(){
+    printf("In progress");
+}
+void college_outfits(){
+    printf("In progress");
+}
