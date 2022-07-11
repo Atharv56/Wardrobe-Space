@@ -63,6 +63,7 @@ void datenight_m(){
                 printf("\n%s\n%s\n%s", top1[i], bottom1[i], foot1[i]);
                 sum = costt1[i]+ costb1[i]+costf1[i]+sum;
                 printf("\nTotal cost: %i", sum);
+                printf("\n");
                 sum = 0;
                 }
         break;    
