@@ -13,7 +13,7 @@ int main(){
         male();
         break;
         case 2:
-        //female();
+        female();
         break;
         default:
             printf("invalid input");
@@ -68,10 +68,7 @@ void datenight_m(){
                 }
         break;    
 
-    }
-    
-
-    
+    }   
 }
 void outing_m(){
     printf("In progress");

@@ -1,10 +1,10 @@
-/
+
 #include <stdio.h>
 #include<conio.h>
 
 int datenight()
 {
-    int i,j,k;
+    int i,j,k, n;
     float sum=0.0;
     char top1[][100]={"mesh top","halterneck","bodysuit"};
     float costtop1[100]={1000.00,869.90,990.00};
@@ -24,8 +24,7 @@ int datenight()
     float costbottom3[100]={1080.00,789.90,557.89};
     char footwear3[][100]={"stilletos","wedges","sneakers"};
     float costfootwear3[100]={989.89,1000.00,750.00};
-    printf("choose an option based on time of the day and mood\n1.night and glamedup\n2.night and simple&elegant\n
-    3.day and glamed up\n4.day and simple&elegant");
+    printf("choose an option based on time of the day and mood\n1.night and glamedup\n2.night and simple&elegant\n3.day and glamed up\n4.day and simple&elegant");
     scanf("%d",&n);
     switch(n)
     {
@@ -75,26 +74,27 @@ int datenight()
         }
         break;
         case 4:
-         for(i=0;i<=2;i++)
-        {
-            for(j=0;j<=2;j++)
-            {
-                for(k=0;k<=2;k++)
-                {
-                    printf("outfits:%s+%s+%s\n",top4[i],bottom4[j],footwear4[k]);
-                    sum=sum+costtop4[i]+costbottom4[j]+costfootwear4[k];
-                    printf("estimated price:%f\n",sum);
-                }
-            }
+        //  for(i=0;i<=2;i++)
+        // {
+        //     for(j=0;j<=2;j++)
+        //     {
+        //         for(k=0;k<=2;k++)
+        //         {
+        //             printf("outfits:%s+%s+%s\n",top4[i],bottom4[j],footwear4[k]);
+        //             sum=sum+costtop4[i]+costbottom4[j]+costfootwear4[k];
+        //             printf("estimated price:%f\n",sum);
+        //         }
+        //     }
             
-        }
+        // }
         break;
         default:
         printf("ivalid input");
         break;
          
     
-    )
+    
+    }
     
     
    
