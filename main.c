@@ -4,7 +4,8 @@ int main(){
     int x;
     printf("Welcome to WardrobeSpace!!!");
     printf("\nLets pick an outfit for you");
-    printf("\nPlease enter your gender: \n1.Male\n2.Female");
+    // printf("\nPlease enter your gender: \n1.Male\n2.Female");
+    pattern();
     printf("\n");
     scanf("%d", &x);
     switch(x)
@@ -41,7 +42,32 @@ void male(){
     }
 
 }
+void patttern(){
+      char a[]=  "1) Male   2)Female";
+    
+printf(" ------------------- \n");
+    
+    for (int j = 0; j<5; j++)
+    {
+        printf("|");
+        if(j!=2){
+        for(int i = 0; i<sizeof(a)/sizeof(a[0]);i++){
+            printf(" ");
+            
+        }
 
+        printf("|\n");
+        }
+        if(j==2){
+            printf("1) Male   2)Female |");
+            printf("\n");
+        }
+        
+    }
+    
+    
+printf(" ------------------- ");
+}
 void datenight_m(){
     int x, sum=0;
     char top1[][8000] = {"black tee", "white tee", "red tee"};
