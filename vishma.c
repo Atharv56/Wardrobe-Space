@@ -26,7 +26,7 @@ int main()
         case 2:
         for(i=0;i<=2;i++)
         {
-            printf("\n%s->Estimated cost Rs %.2f\n",outfit2[i],cost2[i])
+            printf("\n%s->Estimated cost Rs %.2f\n",outfit2[i],cost2[i]);
 
         }
         break;
