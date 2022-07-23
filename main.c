@@ -17,27 +17,28 @@ int main(){
     printf("\nPlease enter a password(should not exceed 10 characters): \n");
     scanf("%s", u.pass);
     if (strlen(u.pass)>10){
-        printf("Conditions not met");
+        printf("\nConditions not met");
     }
     else{
-        printf("Your password has been saved");
+        printf("\nYour password has been saved");
     }
+    printf("\nHello %s!", u.name);
     pass:
-    printf("Please enter your password to start");
+    printf("\nPlease enter your password to start\n\n");
     scanf("%s", password);
-    printf("Verifying.");
+    printf("\nVerifying.");
     sleep(1);
     printf(".");
     sleep(1);
     printf(".");
     
     if (strcmp(password, u.pass)==0){
-        printf("Correct password!");
+        printf("\nCorrect password!");
         display();
         return;
     }
     else{
-        printf("Incorrect password please try again");
+        printf("\nIncorrect password please try again");
         goto pass;
     }
     getch();
@@ -51,8 +52,8 @@ void sleep(int no_of_sec){
 }
 void display(){
     int x;
-    printf("Welcome to WardrobeSpace!!!");
-    printf("\nLets pick an outfit for you");
+    printf("\nWelcome to WardrobeSpace!!!");
+    printf("\nLets pick an outfit for you\n");
     pattern();
     printf("\n");
     scanf("%d", &x);
@@ -131,6 +132,15 @@ void datenight_m(){
         case 1: 
 
             for(int i = 0; i<=2; i++){
+                if(i==0){
+                    red();
+                }
+                else if(i==1){
+                    purple();
+                }
+                else{
+                    cyan();
+                }
                 printf("\noption %d:", i+1);
                 printf("\n%s\n%s\n%s", top1[i], bottom1[i], foot1[i]);
                 sum = costt1[i]+ costb1[i]+costf1[i]+sum;
@@ -138,6 +148,7 @@ void datenight_m(){
                 printf("\n");
                 sum = 0;
                 }
+                reset();
         break;    
 
     }   
@@ -263,4 +274,16 @@ void outing_with_friends(){
 }
 void college_outfits(){
     printf("In progress");
+}
+void red(){
+    printf("\033[1;31m");
+}
+void purple(){
+    printf("\033[0;35m");
+}
+void cyan(){
+    printf("\033[0;36m");
+}
+void reset(){
+    printf("\033[0m");
 }
