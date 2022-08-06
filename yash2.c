@@ -4,7 +4,7 @@
 int main()
 {
     int i,j,n;
-    char outfit1[][8000] = {"","",""};
+    char outfit1[][8000] = {,3000,2000};
     float cost1[80]={,,};
     char outfit2[][8000]={"","",""};
     float cost2[80]={,,};

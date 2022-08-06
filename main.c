@@ -154,7 +154,48 @@ void datenight_m(){
     }   
 }
 void outing_m(){
-    printf("In progress");
+    int i,j,n;
+    char outfit1[][8000] = {"White crew neck Tshirt+Black Leather Jacket+Black Denim Pants+Black Chelsea Boots","Blue and White Varsity Jacket+Black Round Neck Tshirt+Beige Cargo Pants+High Top Sneakers","Tan Corduroy Jacket+Black T-Shirt"};
+    float cost1[80]={6800.00,5500.00,4800.00};
+    char outfit2[][8000]={"Black Button Down Shirt+Navy Blue Denim Pants+White Sneakers","White Oversized Printed Tshirt+Black Relaxed Fit Denim Pants+White Sneakers","Black Hoodie+Creme Cargo Pants+Black Sneakers"};
+    float cost2[80]={4000.00,3600.00,3800.00};
+    char outfit3[][8000]={"Sky Blue Sweatshirt+White Shirt+Off-White Pants+White Sneakers","Grey Round Neck Tshirt+Navy Blue Denim Jacket+Black Denim Pants+Black Chelsea Boots","Black Floral Shirt+Brown Chino Pants+Black Sneakers"};
+    float cost3[80]={3500.00,4500.00,3800.00};
+    char outfit4[][8000]={"Baby Pink Half Sleeves Shirt+Off-White Chino Shorts+White Sneakers","Off-White Printed T-Shirt+Dark Green Cargo Pants+High Top Sneakers","White Linen Shirt+Beige Chino Pants+Brogues"};
+    float cost4[80]={3200.00,3500.00,4000.00};
+    printf("lets decide your outfit based on time of the day and your current mood\n1.night and glamup\n2.night and simple and elegant\n3.day and glamup\n4.day and simple and elegant");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit1[i],cost1[i]);
+        }
+        break;
+        case 2:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit2[i],cost2[i]);
+        }
+        break;
+        case 3:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit3[i],cost3[i]);
+        }
+        break;
+        case 4:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit4[i],cost4[i]);
+        }
+        break;
+        default:
+        printf("oops!option not available");
+        break;
+
+    }
 }
 void college_outfit_m(){
     printf("In progress");
@@ -270,10 +311,93 @@ void datenight(){
     }
 }
 void outing_with_friends(){
-    printf("In progress");
+    int i,j,n;
+    char outfit1[][8000] = {"Option 1)\n* Brown blazer\n* Neon crop top\n* Black pants\n* Pointy toe heels\n", "\nOption 2)\n* Tshirt\n* Skin fit jeans\n* Sweater vest\n* Knee high socks\n* Loafers\n","\nOption 3)\n* Cardigan\n* A cami\n* Retro trousers\n"};
+    float cost1[80]={4000.00,2000.00,1500.00};
+    char outfit2[][8000]={"Option 1)\n* Ribbed knit dress\n* Heeled boots\n","\nOption 2)\n* Puffy sleeves top\n* Denim skirt\n* Hoops\n","\nOption 3)\n* Sweatshirt\n* Ribbed jeans\n* Sneakers\n"};
+    float cost2[80]={2500.00,2000.00,1560.00};
+    char outfit3[][8000]={"Option 1)\n* Tank top\n* Long skirt\n* Cute sandals\n","\nOption 2)\n* White tshirt\n* Denim jacket\n* Bootcut jeans\n","\nOption 3)\n* Formal shirt\n* Tousers\n* Pointy toe heels\n"};
+    float cost3[80]={3500.00,1550.00,2890.00};
+    char outfit4[][8000]={"Option 1)\n* Summer dress\n* Hoops\n* Cute sandals\n","\nOption 2)\n* A cute crop top\n* Boyfriend fit jeans\n* Boots\n","\nOption 3)\n* Sleeveless top\n* Meshed jacket\n* Baggy jeans\n"};
+    float cost4[80]={1545.00,2000.00,1789.00};
+    printf("lets decide your outfit based on time of the day and your current mood\n1.Night and Glamup\n2.Night and Simple and Elegant\n3.Day and Glamup\n4.Day and Simple and Elegant\n");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+        for(i=0;i<=2;i++)
+        {
+            printf("\n%s->Estimated cost Rs %.2f\n",outfit1[i],cost1[i]);
+        }
+        break;
+        case 2:
+        for(i=0;i<=2;i++)
+        {
+            printf("\n%s->Estimated cost Rs %.2f\n",outfit2[i],cost2[i]);
+
+        }
+        break;
+        case 3:
+        for(i=0;i<=2;i++)
+        {
+            printf("\n%s->Estimated cost Rs %.2f\n",outfit3[i],cost3[i]);
+        }
+        break;
+        case 4:
+        for(i=0;i<=2;i++)
+        {
+            printf("\n%s->Estimated cost Rs %.2f\n",outfit4[i],cost4[i]);
+        }
+        break;
+        default:
+        printf("Oops!option not available :(");
+        break;
+
+    }
 }
 void college_outfits(){
-    printf("In progress");
+    int i,j,n;
+    char outfit1[][8000] = {"black satin dress+silver jewllery+heels","crop top+mini skirt+boots","blazer dress+knee high boots+silver jewllery"};
+    float cost1[80]={4000.00,2000.00,1500.00};
+    char outfit2[][8000]={"leather jacket+turtleneck+mom fit jeans","vest top+skirt+layered necklace+black leather boots","plaid shirt+jeans+choker"};
+    float cost2[80]={2500.00,2000.00,1560.00};
+    char outfit3[][8000]={"white crop top+plaid skirt+black pumps","floral dress+bracelet+lace ballet flats","sleeves top+shorts+leather jacket+black nose ring"};
+    float cost3[80]={3500.00,1550.00,2890.00};
+    char outfit4[][8000]={"denim jacket+floral dress+bright sandals+sunglasses to look gorgeous","Jumpsuit+statement clutch+flat heels","grey sweatshirt+blue ribbed jeans+black shoes"};
+    float cost4[80]={1545.00,2000.00,1789.00};
+    printf("lets decide your outfit based on time of the day and your current mood\n1.night and glamup\n2.night and simple and elegant\n3.day and glamup\n4.day and simple and elegant\n");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit1[i],cost1[i]);
+        }
+        break;
+        case 2:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit2[i],cost2[i]);
+        }
+        break;
+        case 3:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit3[i],cost3[i]);
+        }
+        break;
+        case 4:
+        for(i=0;i<=2;i++)
+        {
+            printf("here you go\n%s(estimated cost Rs %.2f)\n",outfit4[i],cost4[i]);
+        }
+        break;
+        default:
+        printf("oops!option not available");
+        break;
+
+    }
 }
 void red(){
     printf("\033[1;31m");
